@@ -1,0 +1,108 @@
+<div class="borde divcuerpo">
+    <div class="row g-0">
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <div id="bloquefoto">
+                <div class="btns" style="display: none;">
+                    <button type="button" class="btn btn-primary pencilfoto" data-bs-toggle="modal" data-bs-target="#modificarpersfoto">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg>
+                    </button>
+                </div>
+                <img src="" alt="" class="img-fluid" id="fotoperfil">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 divcuerpo">
+            <div class="bloque">
+                <div class="btns" style="display: none;">
+                    <button type="button" class="btn btn-primary pencil" data-bs-toggle="modal" data-bs-target="#modificarpersnombre" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg>
+                    </button>
+                </div>
+                <p id="nombre">{{persona.nombre}}</p>
+                <p>{{persona.titulo}}</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 divcuerpo">
+            <div class="bloque">
+                <div class="btns" style="display: none;">
+                    <button type="button" class="btn-editar btn btn-primary pencil" data-bs-toggle="modal" data-bs-target="#modificarpersdescrip" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                        </svg>
+                    </button>
+                </div> 
+                <h1 class="title">Acerca de mi</h1>
+                <p>{{persona.descripcion}}</p>
+        </div>
+    </div>
+    </div>
+    <div id="modificarpersdescrip" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    <div class="myform bg-dark">
+                        <h1 class="text-center">Modificar Contenido</h1>
+                        <form (ngSubmit)="persEditarDescrip()">
+                            <div class="mb-3 mt-3">
+                                <label for="text">Descripcion</label>
+                                <input type="text" class="form-control" [(ngModel)]="persona.descripcion" name="descripcion">
+                            </div>
+                            <p id="confirmacionpersdesc"></p>
+                            <button type="submit" class="btn btn-light mt-3">Guardar Cambios</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modificarpersnombre" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    <div class="myform bg-dark">
+                        <h1 class="text-center">Modificar Contenido</h1>
+                        <form (ngSubmit)="persEditar()">
+                            <div class="mb-3 mt-3">
+                                <label for="text">Nombre</label>
+                                <input type="text" class="form-control" [(ngModel)]="persona.nombre" name="nombre">
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="text">Ocupacion</label>
+                                <input type="text" class="form-control" [(ngModel)]="persona.titulo" name="titulo">
+                            </div>
+                            <p id="confirmacionpers"></p>
+                            <button type="submit" class="btn btn-light mt-3">Guardar Cambios</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modificarpersfoto" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    <div class="myform bg-dark">
+                        <h1 class="text-center">Modificar Contenido</h1>
+                        <form (ngSubmit)="enviarImagen()">
+                            <div class="mb-3 mt-3">
+                                <label for="image" class="form-label">Nueva Foto</label>
+                                <input type="file" id="img" class="form-control" name="imagefile" accept="image/*" (change)="cargarImagen($event)">
+                            </div>
+                            <p id="confirmacionpersimg"></p>
+                            <button type="submit" class="btn btn-light mt-3">Guardar Cambios</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

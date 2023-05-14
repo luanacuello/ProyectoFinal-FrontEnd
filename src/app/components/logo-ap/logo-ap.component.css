@@ -1,0 +1,78 @@
+#logoAP{
+    width: 150px;
+}
+img{
+    width: 50px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes{
+    margin-right: 0.5cm;
+}
+button{
+    border-width: medium;
+}
+
+.myform{
+    max-width: 100%;
+    box-shadow: 0 4px 6px 0px rgba(22, 22, 26, 0.18);
+    padding: 2em;
+    max-width: 100%;
+    color: #fff;
+}
+.modal-body{
+    padding: 0%;    
+}
+.btn-close{
+    position: absolute;
+    right: 0;
+    padding: 1em;
+}
+.modal-content{width: 80%;
+    margin: 0px auto;
+    border-radius: 5px;
+}
+h1{
+    font-size: 2.3em;
+    font-weight: bold;
+}
+.form-control{
+    background-color: inherit;
+    color: #fff;
+    padding-left: 0px;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+}
+.myform .btn{
+    width: 100%;
+    font-weight: 800;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0.5em 0;
+}
+.myform .btn:hover{
+    color: #3330;
+}
+/* PARA CELULAR */
+@media(max-width: 575px){
+.container{
+    flex-direction: column;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.redes img{
+    margin: 0.2em;
+}
+}
+.header-inicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,22 @@
+body { 
+    background-color:  #060047;
+}
+.borde{
+    width: 98%;
+    border:5px outset #E90064;
+   border-radius:22px;
+   align-items: center;
+   margin: 0px auto;
+}
+
+.title{
+    border-bottom: 6px solid #ffffff; 
+}
+
+.bloque{
+    position: relative;
+}
+
+.btns{
+    z-index: 1000;
+}

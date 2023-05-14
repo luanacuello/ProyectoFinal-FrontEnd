@@ -1,0 +1,52 @@
+<div class="header-inicio">
+        <div class="logo">
+            <img src="../../../assets/APLogo.png" alt="" id="logoAP">
+            <img src="../../../assets/logo png white.png" alt="logoAP">
+        </div>
+        <div class="redes">
+            <a href=""><img class="social" src="../../../assets/facebook.png" alt=""></a>
+            <a href=""><img class="social" src="../../../assets/github.png " alt=""></a>
+            <a href=""><img class="social" src="../../../assets/instagram.png" alt=""></a>
+            <a href=""><img class="social" src="../../../assets/linkedin.png" alt=""></a>
+            <a href=""><img class="social" src="../../../assets/twitter.png" alt=""></a>
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginform" id="logg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                </svg>
+                <span id="loginspan">Iniciar Sesion</span>
+            </button>
+            <button type="button" class="btn btn-outline-light" id="loggout" (click)="CerrarSesion()" style="display: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                </svg>
+                <span id="loginspan">Cerrar Sesion</span>
+            </button>
+        </div>
+
+        <div id="loginform" class="modal fade">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                        <div class="myform bg-dark">
+                            <h1 class="text-center">Iniciar Sesion</h1>
+                            <form [formGroup]="form" (ngSubmit)="InciarSesion()" name="loginpers">
+                                <div class="mb-3 mt-3">
+                                    <label for="user">Usuario</label>
+                                    <input type="text" class="form-control" formControlName="user">
+                                </div>
+                                <div class="mb-3 mt-3">
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" class="form-control" formControlName="password">
+                                </div>
+                                <p id="confirmadopers"></p>
+                                <button type="submit" class="btn btn-light mt-3">Iniciar Sesion</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+

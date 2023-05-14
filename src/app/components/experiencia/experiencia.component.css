@@ -1,0 +1,74 @@
+.divcuerpo{
+    padding: 20px;
+    background-color: #B3005E;
+    color: #ffffff;
+}
+
+.trabajo{
+    display: inline;
+}
+.years{
+    display: inline;
+}
+
+.btns{
+    position: absolute;
+    right: 30px;
+}
+
+.btns-agregar{
+    position: absolute;
+    right: 30px;
+}
+.pencil{
+    border-radius: 100%;
+}
+
+.bin{
+    border-radius: 100%;
+}
+
+.plus{
+    border-radius: 100%;
+}
+
+.myform{
+    max-width: 100%;
+    box-shadow: 0 4px 6px 0px rgba(22, 22, 26, 0.18);
+    padding: 2em;
+    max-width: 100%;
+    color: #fff;
+}
+.modal-body{
+    padding: 0%;    
+}
+.btn-close{
+    position: absolute;
+    right: 0;
+    padding: 1em;
+}
+.modal-content{width: 80%;
+    margin: 0px auto;
+    border-radius: 5px;
+}
+h1{
+    font-size: 2.3em;
+    font-weight: bold;
+}
+.form-control{
+    background-color: inherit;
+    color: #fff;
+    padding-left: 0px;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+}
+.myform .btn{
+    width: 100%;
+    font-weight: 800;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0.5em 0;
+}
+.myform .btn:hover{
+    color: #3330;
+}

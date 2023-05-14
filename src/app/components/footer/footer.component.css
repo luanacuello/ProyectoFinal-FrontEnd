@@ -1,0 +1,17 @@
+.divcuerpo{
+    padding: 20px;
+    background-color: #060047;
+    color: #ffffff;
+}
+footer{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 98%;
+    border:5px outset #E90064;
+   border-radius:22px;
+   align-items: center;
+   margin: 0px auto;
+   background-color: #B3005E;
+}

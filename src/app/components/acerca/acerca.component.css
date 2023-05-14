@@ -1,0 +1,102 @@
+
+.divcuerpo{
+    background-color: #B3005E;
+    color: #ffffff;
+    padding: 20px;
+}
+#nombre{
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* estilo de foto de perfil*/
+@media(min-width: 576px){
+    #fotoperfil{
+        position: absolute;
+        border-radius: 30%;
+        border: 5px solid #E90064;
+        ;
+    }
+}
+
+@media(max-width: 575px){
+    #fotoperfil{
+        position: absolute;
+        border-radius: 30%;
+        border: 10px solid #E90064;
+        width: 50%;
+        bottom: -49px;
+        left: 124px;
+    }
+}
+
+#bloquefoto{
+    position: relative;
+    top: -190px;
+}
+
+.btns{
+    position: absolute;
+    right: 2%;
+    top: 1.5%;
+}
+
+.btns-agregar{
+    position: absolute;
+    right: 2%;
+    top: 1.5%;
+}
+
+.pencil{
+    border-radius: 100%;
+}
+.bin{
+    border-radius: 100%;
+}
+
+
+.pencilfoto{
+    position: absolute;
+    border-radius: 100%;
+}
+
+.myform{
+    max-width: 100%;
+    box-shadow: 0 4px 6px 0px rgba(22, 22, 26, 0.18);
+    padding: 2em;
+    max-width: 100%;
+    color: #fff;
+}
+.modal-body{
+    padding: 0%;    
+}
+.btn-close{
+    position: absolute;
+    right: 0;
+    padding: 1em;
+}
+.modal-content{width: 80%;
+    margin: 0px auto;
+    border-radius: 5px;
+}
+h1{
+    font-size: 2.3em;
+    font-weight: bold;
+}
+.form-control{
+    background-color: inherit;
+    color: #fff;
+    padding-left: 0px;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+}
+.myform .btn{
+    width: 100%;
+    font-weight: 800;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0.5em 0;
+}
+.myform .btn:hover{
+    color: #3330;
+}
+
